@@ -1,0 +1,20 @@
+Angular -  é um framework para desenvolvimento Web (HTML, CSS, LINGUAGEM (TypeScript))
+Framework - Caixa de ferramentas
+TypeScript - - Adiciona melhorias ao javascript original
+    -> Tipagem estatica 
+    -> Aponta erros na fase de desenvolvimento de uma aplicação
+    -> Desenvolvido pela Microsoft - código aberto 
+SPA - Single Page Aplication - Trabalha como um porta retrato onde vc troca somente a foto e mantem a moldura.
+
+
+Instalação do Angular   
+    npm install -g @angular/cli
+
+Criar um projeto com angular    
+    ng new nome_projeto
+
+Acessar a pasta do projeto  
+    cd nome_projeto
+
+Iniciar o projeto   
+    ng serve --open

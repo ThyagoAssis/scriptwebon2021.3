@@ -1,0 +1,7 @@
+//Atividade para casa
+/*
+    João trabalha em uma empresa de contabilidade e precisa criar um pequeno programa que:
+    -> Aumente o salário de um funcionário em 10% caso ele atinja a meta. 
+ 
+    O atributo resultado deverá ser privado (pesquisar sobre os metodos get e set para encapsulamento do atributo privado)
+ */
