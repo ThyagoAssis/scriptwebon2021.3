@@ -10,6 +10,9 @@ SPA - Single Page Aplication - Trabalha como um porta retrato onde vc troca some
 Instalação do Angular   
     npm install -g @angular/cli
 
+Verificar a versão do angular   
+    ng version
+
 Criar um projeto com angular    
     ng new nome_projeto
 
