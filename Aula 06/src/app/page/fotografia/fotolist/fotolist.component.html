@@ -3,7 +3,9 @@
     <div class="row"> <!--Linha-->
         <div class="col-3" *ngFor="let foto of imagens"><!--Colunas-->
             <div class="card" style="width: 18rem;">
+              <!--Fotos sendo passada para o componente foto-->
                 <app-foto [imagen]="foto.img"></app-foto>
+              <!---------------------------------------------->
                 <div class="card-body">
                   <h5 class="card-title">{{foto.title}}</h5>
                   <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
