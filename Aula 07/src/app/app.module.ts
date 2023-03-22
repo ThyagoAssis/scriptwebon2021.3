@@ -12,8 +12,6 @@ import { FotoformularioComponent } from './page/fotografia/fotoformulario/fotofo
 import { HomeComponent } from './page/home/home.component';
 import { HeaderComponent } from './componentes/header/header.component';
 
-import { FotoformComponent } from './page/fotografia/fotoform/fotoform.component';
-
 
 @NgModule({
   declarations: [
@@ -22,14 +20,13 @@ import { FotoformComponent } from './page/fotografia/fotoform/fotoform.component
     FotolistComponent,
     FotoformularioComponent,
     HomeComponent,
-    HeaderComponent,    
-    FotoformComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, //Template driven (ngForm, ngModel, ngSubmit)
-    ReactiveFormsModule, //Data driven (formgroup, formbuilder, formcontroname)
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

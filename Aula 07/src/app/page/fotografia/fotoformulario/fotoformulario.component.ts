@@ -34,6 +34,8 @@ export class FotoformularioComponent {
 
 
 
+
+
   //Trabalhando com Template driven
   //Método qu recebe os dados do formulario 
   form(formulario: any){
