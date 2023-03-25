@@ -4,7 +4,7 @@
         <div class="col-3" *ngFor="let foto of imagens"><!--Colunas-->
             <div class="card" style="width: 18rem;">
               <!--Fotos sendo passada para o componente foto-->
-                <app-foto [imagen]="foto.url"></app-foto>
+                <app-foto [imagen]="foto.img"></app-foto>
               <!---------------------------------------------->
                 <div class="card-body">
                   <h5 class="card-title">{{foto.title}}</h5>

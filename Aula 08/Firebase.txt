@@ -1,0 +1,14 @@
+1 - Acessar o firebase: https://firebase.google.com/?hl=pt
+2 - Criar um projeto
+3 - Integrar a nossa aplicação com o firebase
+    -Copiar o SDK(Código gerado ao registrar  o app no firebase) do app firebase  
+    -Colar o SDK dentro do arquivo enviroments.ts (caso naão exista devera ser criado - verificar na gravção )
+4 - Intalar dentro da pasta do projeto as bibliotecas firebase e @angular/firebase  com o comando abaixo:
+    - npm install firebase @angular/fire --save
+5 - Adiciionar os modulo AngularFireModule.initializeApp(environment.firebase) e o AngularFirestoreModule no arquivo app.module.ts
+5 -  Fazer os imports dos modulos caso o vscode não faça automaticamente
+        - import { AngularFireModule } from '@angular/fire/compat';
+        - import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
+Pronto aplicação integrada com o firebase.
+Agora é criar o serviço de banco de dados assunto da proxima aula.

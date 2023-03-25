@@ -1,0 +1,100 @@
+<!-- 
+    Formularios do Angular ( Template Driven / Data Driven )  
+
+    -> Template Driven
+
+        Ferramentas do Template Driven: 
+            ngForm -> Vai permitir criar uma variável no html
+            ngModel -> trabalha enviando os dados dos campos input para o ngForm
+            ngSubmit -> Envia a caixinha(Variável) criada pelo ngForm para o  arquivo ts
+
+            FormsModule - é a loja(modulo) que nos fornece as ferramentas ngForm, ngModel e o ngSubmit
+
+            OBS: Para usar o ngForm, ngModule e ngSubmit precisa fazer a importação do modulo FormsModule
+    no arquivo de modulo que é responsavel pelo component. Ou fazer essa importação no app.module.ts
+-->
+
+<div class="container mt-5">
+    <h1 class="text-center">Formulario template driven</h1>
+
+    <form #formulario="ngForm" (ngSubmit)="form(formulario)">
+        <div class="row mt-3">
+            <div class="col">
+                <label>Informe o Título: </label>
+                <input class="form-control" type="text" name="titulo" ngModel placeholder="Informe o Título">
+            </div>
+        </div>
+
+       <div class="row mt-3">
+            <div class="col">
+                <label>Informe a URL da imagem: </label>
+                <input class="form-control" type="text" name="url" ngModel placeholder="http://imagem.com.br">
+            </div>
+       </div>
+
+        
+       <div class="row mt-3">
+            <div class="col">
+                <label>Descrição: </label>
+                <input class="form-control" type="text" name="descricao" ngModel placeholder="Descrição">
+            </div>
+       </div>
+       
+
+       <div class="row">
+            <div class="col">
+                <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+            </div>
+       </div>        
+    </form>
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------->
+<!--
+    -> Data driven
+        Ferramnentas do DataformBuilder Driven
+            formgroup -> Configurar uma variavel para ser do tipo formulario (Cria a caixinha (variavel))
+            formControlName -> Pegar as informações dos inputs e guarda na caixinha do formGroup
+            formBuilder -> Criar oa estrutura do formulario e vai criar validações
+
+            reactiveFormsModule -> é a loja(modulo) que nos fornece as ferramentas: formgroup, formcontrolname e formbuilder
+
+
+-->
+
+
+<div class="container mt-5">
+    <h1 class="text-center">Formulario data driven</h1>
+
+    <form [formGroup]="formDataDriven" (submit)="formData()">
+        <div class="row mt-3">
+            <div class="col">
+                <label>Informe o Título: </label>
+                <input class="form-control" type="text"  placeholder="Informe o Título" formControlName="titulo">
+            </div>
+        </div>
+
+       <div class="row mt-3">
+            <div class="col">
+                <label>Informe a URL da imagem: </label>
+                <input class="form-control" type="text"  placeholder="http://imagem.com.br" formControlName="url">
+            </div>
+       </div>
+
+        
+       <div class="row mt-3">
+            <div class="col">
+                <label>Descrição: </label>
+                <input class="form-control" type="text"  placeholder="Descrição" formControlName="descricao">
+            </div>
+       </div>
+       
+
+       <div class="row">
+            <div class="col">
+                <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+            </div>
+       </div>        
+    </form>
+</div>
