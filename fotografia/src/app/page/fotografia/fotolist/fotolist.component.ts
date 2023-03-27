@@ -14,7 +14,8 @@ export class FotolistComponent implements OnInit{
   constructor(private fs: FirebaseService){}
   
   ngOnInit(): void {
-      this.fs.consultaDados().subscribe(caixinha => this.imagens = caixinha);
+    //Observable do JS
+      this.fs.consultaDados().subscribe(caixinha => this.imagens = caixinha);      
   }
 
 

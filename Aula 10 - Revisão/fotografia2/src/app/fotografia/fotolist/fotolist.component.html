@@ -1,0 +1,20 @@
+<!--Solução da atividade 03-->
+
+<!-- <h1>{{ titulo }}</h1>
+<img [src]="imagen" alt="">
+<hr>
+<button (click)="altera()">Clique aqui</button>
+ -->
+
+ <!--Atividade 04 -->
+<button (click)="mudar()"> {{nameButton}} </button>
+<hr>
+ <div *ngFor="let foto of imagens; index as i">
+
+    <div *ngIf="control == true || i%2 == 0">
+        <h2>indice:  {{i}}</h2> 
+        <img [src]="foto.img" alt=""> 
+        <hr>
+    </div>  
+
+ </div>
