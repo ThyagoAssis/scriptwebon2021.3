@@ -11,6 +11,10 @@ export class FormularioComponent implements OnInit {
   formulario!: FormGroup;
   titulo = "";
   imagen = ""
+  foto = {
+    img: "https://cdn.pixabay.com/photo/2022/05/11/22/17/pink-hibiscus-7190314_640.jpg",
+    titulo: "Flores"
+  }
 
   constructor(private formBuilder: FormBuilder){}
 
@@ -21,8 +25,8 @@ export class FormularioComponent implements OnInit {
 
   createForm(){
     this.formulario = this.formBuilder.group({
-      titulo: ['', [Validators.required]],
-      img: ['', [Validators.required]]
+      titulo: [this.foto.titulo, [Validators.required]],
+      img: [this.foto.img, [Validators.required]]
     })
   }
 
