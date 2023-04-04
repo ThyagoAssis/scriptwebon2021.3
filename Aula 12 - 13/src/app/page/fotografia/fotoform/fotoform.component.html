@@ -1,0 +1,34 @@
+<div class="container mt-5">
+    <h1 class="text-center">Formulario data driven</h1>
+
+    <form [formGroup]="formDataDriven" (submit)="cadastrar()">
+        <div class="row mt-3">
+            <div class="col">
+                <label>Informe o Título: </label>
+                <input class="form-control" type="text"  placeholder="Informe o Título" formControlName="titulo">
+            </div>
+        </div>
+
+       <div class="row mt-3">
+            <div class="col">
+                <label>Informe a URL da imagem: </label>
+                <input class="form-control" type="text"  placeholder="http://imagem.com.br" formControlName="url">
+            </div>
+       </div>
+
+        
+       <div class="row mt-3">
+            <div class="col">
+                <label>Descrição: </label>
+                <input class="form-control" type="text"  placeholder="Descrição" formControlName="descricao">
+            </div>
+       </div>
+       
+
+       <div class="row">
+            <div class="col">
+                <button class="btn btn-primary mt-3" type="submit" [disabled]="!formDataDriven.valid">Enviar</button>
+            </div>
+       </div>        
+    </form>
+</div>
