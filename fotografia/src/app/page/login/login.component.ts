@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit{
 
   ngOnInit(): void {
     this.createForm();
+   
   }
 
   //Cria e gera validação para o formulario

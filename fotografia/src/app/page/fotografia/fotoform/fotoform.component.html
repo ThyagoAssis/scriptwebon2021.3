@@ -1,16 +1,16 @@
-<app-header></app-header>
-<div class="container mt-5">
-    <h1 class="text-center">Formulario data driven</h1>
+
+<div class="container mt-5 " >
+    <h1 class="text-center " style="margin-top:100px;">Formulario de Cadastro</h1>
 
     <form [formGroup]="formDataDriven" (submit)="cadastrar()">
-        <div class="row mt-3">
+        <div class="row ">
             <div class="col">
                 <label>Informe o Título: </label>
                 <input class="form-control" type="text"  placeholder="Informe o Título" formControlName="titulo">
             </div>
         </div>
 
-       <div class="row mt-3">
+       <div class="row ">
             <div class="col">
                 <label>Informe a URL da imagem: </label>
                 <input class="form-control" type="text"  placeholder="http://imagem.com.br" formControlName="url">
@@ -18,7 +18,7 @@
        </div>
 
         
-       <div class="row mt-3">
+       <div class="row ">
             <div class="col">
                 <label>Descrição: </label>
                 <input class="form-control" type="text"  placeholder="Descrição" formControlName="descricao">
@@ -28,7 +28,7 @@
 
        <div class="row">
             <div class="col">
-                <button class="btn btn-primary mt-3" type="submit" [disabled]="formDataDriven.invalid">Enviar</button>
+                <button class="btn blue-grey darken-1 text-center btn-block col s12 text-light" type="submit" [disabled]="formDataDriven.invalid">Enviar</button>
             </div>
        </div>        
     </form>

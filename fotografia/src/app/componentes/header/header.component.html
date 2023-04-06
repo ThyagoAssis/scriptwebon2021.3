@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
 
   
@@ -9,9 +9,22 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" routerLink="/">Início</a>
-        <a class="nav-item nav-link" routerLink="/lista">Lista</a>
-        <a class="nav-item nav-link" routerLink="/form">Formulario</a>
+        <a class="nav-item nav-link" routerLink="lista">Lista</a>
+        <a class="nav-item nav-link" routerLink="form">Formulario</a>
       </div>
     </div>
   </div>
+</nav>
+ -->
+
+ <nav class="blue-grey darken-1 fixed-top" *ngIf="header == true">
+  <div class="nav-wrapper container ">
+    <p class="brand-logo">TuxView</p>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a routerLink="/">Início</a></li>
+      <li><a routerLink="/lista">Fotos</a></li>
+      <li><a routerLink="/form">Cadastrar</a></li>
+      <li><a (click)="deslogar()">Sair</a></li>
+    </ul>
+  </div>b
 </nav>

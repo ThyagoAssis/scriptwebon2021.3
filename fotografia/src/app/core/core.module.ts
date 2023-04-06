@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AppRoutingModule } from '../app-routing.module';
+import { HeaderComponent } from '../componentes/header/header.component';
 
 @NgModule({
   
+  declarations: [ HeaderComponent], 
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
 
   exports: [
@@ -14,6 +18,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     AngularFirestoreModule,
     //AngularFireAuthModule - Responsável por fornecer as ferramentas de autenticação (AngularFireAuth)
     AngularFireAuthModule,
+    AppRoutingModule,
+    HeaderComponent,
+    CommonModule,
   ]
 })
 export class CoreModule { }

@@ -14,12 +14,12 @@ import { CoreModule } from '../app/core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,    
+    AppComponent,
        
   ],
 
   imports: [   
-    SharedModule,
+    
     AngularFireModule.initializeApp(environment.firebase),
     FotografiaModule,
     HomeModule,

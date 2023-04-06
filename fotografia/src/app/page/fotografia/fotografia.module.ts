@@ -7,7 +7,7 @@ import { FormupdateComponent } from './formupdate/formupdate.component';
 import { FotoformComponent } from './fotoform/fotoform.component';
 import { FotolistComponent } from './fotolist/fotolist.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { HeaderModule } from 'src/app/componentes/header/header.module';
+
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { HeaderModule } from 'src/app/componentes/header/header.module';
         FotolistComponent
     ],
 
-    imports: [SharedModule, HeaderModule],
+    imports: [SharedModule],
 
     exports: [FotoComponent]
 })

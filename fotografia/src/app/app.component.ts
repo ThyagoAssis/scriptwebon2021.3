@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AutenticarService } from './servico/autenticar.service';
 
 //Decorator do angular
 @Component({
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {}
+export class AppComponent {
+
+  header: boolean;
+}

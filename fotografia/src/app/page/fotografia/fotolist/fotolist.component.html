@@ -1,33 +1,26 @@
-<app-header></app-header>
-<div class="container mt-5 mb-5">
-    <!--Card Bootstrap-->
-    <div class="row"> <!--Linha-->
-        <div class="col-3" *ngFor="let foto of imagens"><!--Colunas-->
-            <div class="card shadow" style="margin-left: 5px; width: 18rem;">
-              <!--Fotos sendo passada para o componente foto-->
-                <app-foto [imagen]="foto.url"></app-foto>
-              <!---------------------------------------------->
-                <div class="card-body">
-                  <h5 class="card-title">{{ foto.titulo }}</h5>
-                  <p class="card-text">{{ foto.descricao }}</p>
-                  
-                  <!-- Botão excluir -->
-                  <div class="row">
-                    <div class="col">
-                      <button class="btn btn-danger btn-block mb-3" (click)="excluir(foto.id)"> Excluir </button>
-                    </div>
-                  </div>
 
-                  <!--Botão Editar-->
-                  <div class="row">
-                    <div class="col">
-                      <button class="btn btn-success btn-block" [routerLink]="['/update', foto.id]"> Editar </button>
-                    </div>
-                  </div>
-                  
-                  
-                </div>
-              </div>
+<div class="container mt-5">
+  <div class="row mt-5" >
+    <div class="col-4" *ngFor="let fotos of imagens">
+      <div class="card mt-5" >
+        <div class="card-image waves-effect waves-block waves-light">
+          <!-- <img class="activator" src="images/office.jpg"> -->
+          <app-foto class="activator" [imagen]="fotos.url"></app-foto>
         </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{ fotos.titulo }}<i class="material-icons right">more_vert</i></span>
+          <button class="btn red lighten-2 text-center btn-block col s12" (click)="excluir(fotos.id)">Excluir</button>
+          <button class="btn red  teal lighten-1 text-center btn-block col s12 mt-3" [routerLink]="['/update', fotos.id]">Editar</button>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">{{ fotos.titulo }}<i class="material-icons right">close</i></span>
+          <p>{{ fotos.descricao }}</p>
+        </div>
+      </div>
     </div>
-</div>
+    
+    </div>
+
+
+  </div>
+  

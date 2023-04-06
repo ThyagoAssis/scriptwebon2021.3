@@ -11,18 +11,10 @@ import { AutenticarService } from 'src/app/servico/autenticar.service';
 export class HomeComponent {
 
 
-  imagemHome = "https://cdn.pixabay.com/photo/2020/04/20/14/47/car-5068532_960_720.png";
+  /* imagemHome = "https://cdn.pixabay.com/photo/2020/04/20/14/47/car-5068532_960_720.png"; */
 
-  constructor(
-    private autenticar: AutenticarService,
-    private router: Router
-  ){}
+  imagemHome = "https://www.carpemundi.com.br/wp-content/uploads/2015/09/mina-cortada2.jpg"
 
 
-   //delogar
-   deslogar(){
-    this.autenticar.logout();
-    this.router.navigate(['']);
-
-  }
+ 
 }
